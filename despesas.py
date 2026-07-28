@@ -3,13 +3,14 @@ from datetime import datetime
 despesas = []
 
 def calcular_total():
-     return sum(valor for nome, valor in despesas)
+     return sum(valor for nome, valor, categoria in despesas)
 
 def adicionar_despesa():
     nome = input('Qual o nome da despesa adicionada: ')
     valor = float(input('Qual o valor da despesa: '))
+    categoria = input('Qual a categoria da despesa: ')
 
-    despesas.append((nome, valor))
+    despesas.append((nome, valor, categoria))
     print('Despesa Adicionada!')
 
 def listar_despesas():
@@ -18,8 +19,8 @@ def listar_despesas():
         return
     
     print('\n--- Suas Despesas ---')
-    for nome, valor in despesas:
-        print(f'{nome} - R${valor}')
+    for nome, valor, categoria in despesas:
+        print(f'{nome} - R${valor} - {categoria}')
         
 def total_despesas():
     total = calcular_total()
@@ -44,8 +45,8 @@ def fechar_mes():
             nome_arquivo = f'relatorio_{data_atual}.txt'
             with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
                  arquivo.write('----- Relatório do seu mês -----\n')
-                 for nome, valor in despesas:
-                      arquivo.write(f'{nome} - R${valor}\n')
+                 for nome, valor, categoria in despesas:
+                      arquivo.write(f'{nome} - R${valor} - {categoria}\n')
                  arquivo.write(f'\nTotal gasto no mês: R${total}\n')
 
             despesas = []
