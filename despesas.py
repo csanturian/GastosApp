@@ -45,10 +45,18 @@ def fechar_mes():
             nome_arquivo = f'relatorio_{data_atual}.txt'
             with open(nome_arquivo, 'w', encoding='utf-8') as arquivo:
                  arquivo.write('----- Relatório do seu mês -----\n')
+                 subtotal_categoria = {}
                  for nome, valor, categoria in despesas:
+                      if categoria in subtotal_categoria:
+                           subtotal_categoria[categoria] = subtotal_categoria[categoria] + valor
+                      else:
+                           subtotal_categoria[categoria] = valor
                       arquivo.write(f'{nome} - R${valor} - {categoria}\n')
                  arquivo.write(f'\nTotal gasto no mês: R${total}\n')
 
+                 arquivo.write('\n-----RESUMO POR CATEGORIA-----\n')
+                 for categoria, valor in subtotal_categoria.items():
+                        arquivo.write(f'{categoria}: R${valor}\n')
             despesas = []
 
             print('Novo mês iniciado! Despesas zeradas.')

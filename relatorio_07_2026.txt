@@ -1,0 +1,15 @@
+----- Relatório do seu mês -----
+Compras do mês - R$299.9 - Mercado
+Corte de Cabelo - R$50.0 - Barbeiro
+Corrida - R$23.0 - Uber
+Almoço - R$34.0 - Alimentação
+Compras necessárias - R$79.0 - Mercado
+Pizza - R$50.0 - Alimentação
+
+Total gasto no mês: R$535.9
+
+-----RESUMO POR CATEGORIA-----
+Mercado: R$378.9
+Barbeiro: R$50.0
+Uber: R$23.0
+Alimentação: R$84.0
