@@ -62,7 +62,7 @@ Alimentação: R$165.0
 Transporte: R$20.0
 ```
 
-## Tecnologias conceitos praticados
+## Tecnologias e conceitos praticados
 
 - Python 3
 - Funções
