@@ -1,7 +1,7 @@
 from senha import cadastrar
 from despesas import adicionar_despesa, listar_despesas, total_despesas, fechar_mes
 
-print('Vamos agora entrar em sua conta!')
+print('Vamos agora cadastrar sua conta!')
 
 usuario_cadastrado, senha_cadastrada = cadastrar()
 
