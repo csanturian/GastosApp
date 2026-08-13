@@ -62,9 +62,16 @@ Alimentação: R$165.0
 Transporte: R$20.0
 ```
 
-## Tecnologias
+## Tecnologias e conceitos praticados
 
 - Python 3
+- Funções
+- Estruturas de dados (listas e dicionários)
+- Estruturas condicionais e de repetição
+- Validação de dados
+- Manipulação de arquivos `.txt`
+- Expressões regulares (`re`)
+- Manipulação de datas (`datetime`)
 
 ## Autor
 
