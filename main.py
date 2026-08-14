@@ -18,17 +18,17 @@ else:
 
         if nome_usuario == usuario_cadastrado and senha_usuario == senha_cadastrada:
             login_correto = True
-            print('LOGIN FEITO COM SUCESSO!')
+            print('\nLOGIN FEITO COM SUCESSO!')
             print('\n--- Bem vindo ao sistema de despesas ---')
             while True:
-                print('\n--- MENU PRINCIPAL---')
+                print('\n--- MENU PRINCIPAL---\n')
                 print('1. Adicionar Despesa')
                 print('2. Listar Despesas')
                 print('3. Ver total')
                 print('4. Fechar Lista do Mês')
                 print('0. Sair')
 
-                opcao = input('Digite a opção desejada: ')
+                opcao = input('\nDigite a opção desejada: ')
             
                 if opcao == '1':
                     adicionar_despesa()

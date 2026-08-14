@@ -24,7 +24,7 @@ def validar_senha(senha_informada):
         return 'OK'
     
 def cadastrar():
-        usuario = input('Crie um usuário: ')
+        usuario = input('\nCrie um usuário: ')
         senha_informada = input('Crie uma senha(minimo 8 caracteres): ')
         
         if validar_usuario(usuario) != 'OK':
@@ -35,5 +35,5 @@ def cadastrar():
             print(validar_senha(senha_informada))
             return None, None
         
-        print('Cadastro feito com sucesso!')
+        print('\nCadastro feito com sucesso!\n')
         return usuario, senha_informada
