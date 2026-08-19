@@ -21,7 +21,7 @@ else:
             print('\nLOGIN FEITO COM SUCESSO!')
             print('\n--- Bem vindo ao sistema de despesas ---')
             while True:
-                print('\n--- MENU PRINCIPAL---\n')
+                print('\n--- MENU PRINCIPAL ---\n')
                 print('1. Adicionar Despesa')
                 print('2. Listar Despesas')
                 print('3. Ver total')
