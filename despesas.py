@@ -55,12 +55,12 @@ def fechar_mes():
                            subtotal_categoria[categoria] = subtotal_categoria[categoria] + valor
                       else:
                            subtotal_categoria[categoria] = valor
-                      arquivo.write(f'{nome} - R${valor:.2f} - {categoria}\n')
-                 arquivo.write(f'\nTotal gasto no mês: R${total:.2f}\n')
+                      arquivo.write(f'{nome} - R${valor} - {categoria}\n')
+                 arquivo.write(f'\nTotal gasto no mês: R${total}\n')
 
                  arquivo.write('\n-----RESUMO POR CATEGORIA-----\n')
                  for categoria, valor in subtotal_categoria.items():
-                        arquivo.write(f'{categoria}: R${valor:.2f}\n')
+                        arquivo.write(f'{categoria}: R${valor}\n')
             despesas = []
 
             print('Novo mês iniciado! Despesas zeradas.')
